@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marks Predictor</title>
+</head>
+
+<body>
+
+    <h2>Enter Details</h2>
+
+    <form action="/predict" method="post">
+        Study Hours: <input type="number" name="study" required><br><br>
+        Attendance: <input type="number" name="attendance" required><br><br>
+        Sleep Hours: <input type="number" name="sleep" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if result %}
+    <h3>Predicted Marks: {{ result }}</h3>
+    {% endif %}
+
+</body>
+
+</html>

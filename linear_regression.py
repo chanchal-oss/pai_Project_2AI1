@@ -24,3 +24,7 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 print("MSE:", mean_squared_error(y_test, y_pred))
+import pickle
+
+with open('model.pkl', 'wb') as f:
+    pickle.dump(model, f)
