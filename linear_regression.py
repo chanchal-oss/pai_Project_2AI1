@@ -5,6 +5,7 @@ from sklearn.metrics import mean_squared_error
 #linear_regression
 #dataset of ....
 # Dataset
+#satart...
 data = {
     'StudyHours': [2, 4, 6, 8, 3, 5, 7, 9],
     'Attendance': [60, 70, 80, 90, 65, 75, 85, 95],
